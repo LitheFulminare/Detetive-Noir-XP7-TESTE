@@ -1,0 +1,10 @@
+join jinx-jink right [animation="Slide From Right" length="0.3" wait="true" z_index="1"]
+jinx-jink: What am I doing here?
+[wait time="1.5" skippable="true"]
+jinx-jink: Who am I?
+[wait time="1.5" skippable="true"]
+jinx-jink: What is this place? Help!
+[wait time="0.5" skippable="true"]
+join sir_godot left [animation="Slide From Left" length="0.3"]
+sir_godot: Don't worry! Miku is here!
+[wait time="1.5"]

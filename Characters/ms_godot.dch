@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.49667358, 0.84765625, 0.83120394, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "placeholder_vn_style",
+"suffix": ""
+},
+&"default_portrait": "placeholder_miku",
+&"description": "It's Miku!",
+&"display_name": "Miku",
+&"mirror": false,
+&"nicknames": ["Miku-chan"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"placeholder_miku": {
+"export_overrides": {
+"image": "\"res://Assets/Placeholder/miku.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.6,
+"scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
+}
+},
+&"scale": 1.0
+}

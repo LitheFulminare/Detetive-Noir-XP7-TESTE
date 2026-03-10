@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cfa38wc81ivmh"]
+
+[ext_resource type="Script" uid="uid://calefmhq714iv" path="res://Scripts/Mechanics/Scenes/main_scene.gd" id="1_52fb6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2ia5b"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_52fb6"]
+
+[node name="Main_Scene" type="Node2D" unique_id=1242555024]
+script = ExtResource("1_52fb6")
+
+[node name="placeholder_bg" type="Sprite2D" parent="." unique_id=1108101680]
+modulate = Color(0.18925694, 0.66137975, 0.7348177, 1)
+z_index = -2
+position = Vector2(577.75, 325.25)
+scale = Vector2(1156.5, 651.5)
+texture = SubResource("PlaceholderTexture2D_2ia5b")
+
+[node name="placeholder_table" type="Sprite2D" parent="." unique_id=1439817965]
+modulate = Color(0.56598717, 0.27049786, 0.1297341, 1)
+position = Vector2(274.99997, 531)
+scale = Vector2(537, 237.00002)
+texture = SubResource("PlaceholderTexture2D_52fb6")
