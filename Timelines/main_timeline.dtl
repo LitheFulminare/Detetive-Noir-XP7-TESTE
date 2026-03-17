@@ -8,10 +8,15 @@ jinx-jink: What is this place? Help!
 join sir_godot leftmost [animation="Slide From Left" length="0.3"]
 sir_godot: Don't worry! Miku is here!
 [wait time="1.5"]
-leave sir_godot [animation="Zoom Out" length="0.2"]
+leave sir_godot [animation="Zoom Out" wait="true"]
 jinx-jink: No! Strange blue-haired girl!
 jinx-jink: ...
-jinx-jink: Maybe I should get- wait, why is there a leek here?
-if {leek_obtained} == true:
-	join sir_godot rightmost [animation="Zoom In" length="0.3" z_index="1"]
+jinx-jink: Maybe I should get- wait, why are there leeks here?
+update jinx-jink [animation="Heartbeat" length="1.0" repeat_forever="true"]
+if {leek_obtained} > 2.0:
+	join sir_godot leftmost [animation="Bounce In" z_index="1"]
 	sir_godot: Thank you stranger!
+	jinx-jink: Don't worry! Let's get out of here
+	sir_godot: For sure!
+	leave sir_godot [animation="Slide To Left"]
+	leave jinx-jink [animation="Slide To Left"]

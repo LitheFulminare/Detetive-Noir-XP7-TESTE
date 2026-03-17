@@ -18,6 +18,7 @@ config/icon="res://Assets/Placeholder/icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+item_manager="*uid://b3h3ytrkd0ee5"
 
 [dialogic]
 
@@ -36,7 +37,7 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://Assets/Layout_Styles/placeholder_vn_style.tres"]
 layout/default_style="res://Assets/Layout_Styles/placeholder_vn_style.tres"
 variables={
-"leek_obtained": false
+"leeks_obtained": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -73,6 +74,10 @@ audio/channel_defaults={
 animations/join_default="Slide From Left"
 animations/leave_default="Slide To Left"
 animations/cross_fade_default="Fade Cross"
+
+[display]
+
+mouse_cursor/custom_image="uid://cn46cfa8tjqsw"
 
 [editor_plugins]
 
