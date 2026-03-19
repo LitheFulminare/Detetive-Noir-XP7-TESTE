@@ -32,6 +32,9 @@ scene = ExtResource("5_bh18p")
 script = ExtResource("2_q0vxy")
 scene = ExtResource("6_n70d1")
 overrides = {
+"box_animation_in": "1",
+"box_animation_new_text": "1",
+"box_animation_out": "1",
 "box_panel": "\"res://Assets/Layout_Styles/placeholder_vn_textbox.tres\""
 }
 
@@ -66,4 +69,4 @@ layer_info = {
 "16": SubResource("Resource_dl86o"),
 "17": SubResource("Resource_bjbbs")
 }
-metadata/_latest_layer = ""
+metadata/_latest_layer = "13"

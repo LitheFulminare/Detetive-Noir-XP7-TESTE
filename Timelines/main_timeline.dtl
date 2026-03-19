@@ -1,22 +1,13 @@
-join jinx-jink rightmost [animation="Slide From Right" length="0.3" wait="true" z_index="1"]
-jinx-jink: What am I doing here?
-[wait time="1.5" skippable="true"]
-jinx-jink: Who am I?
-[wait time="1.5" skippable="true"]
-jinx-jink: What is this place? Help!
-[wait time="0.5" skippable="true"]
+join protagonist rightmost [animation="Slide From Right" length="0.3" wait="true" z_index="1"]
+protagonist: What am I doing here?
+protagonist: Who am I?
+protagonist: What is this place? Help!
 join sir_godot leftmost [animation="Slide From Left" length="0.3"]
 sir_godot: Don't worry! Miku is here!
-[wait time="1.5"]
-leave sir_godot [animation="Zoom Out" wait="true"]
-jinx-jink: No! Strange blue-haired girl!
-jinx-jink: ...
-jinx-jink: Maybe I should get- wait, why are there leeks here?
-update jinx-jink [animation="Heartbeat" length="1.0" repeat_forever="true"]
-if {leek_obtained} > 2.0:
-	join sir_godot leftmost [animation="Bounce In" z_index="1"]
-	sir_godot: Thank you stranger!
-	jinx-jink: Don't worry! Let's get out of here
-	sir_godot: For sure!
-	leave sir_godot [animation="Slide To Left"]
-	leave jinx-jink [animation="Slide To Left"]
+leave sir_godot [animation="Instant Out" wait="true"]
+protagonist: No! Strange blue-haired girl!
+sir_godot: ...
+protagonist: Maybe I should get- wait, why are there leeks here?
+update protagonist [animation="Heartbeat" length="0.4" repeat_forever="true"]
+[wait_input]
+[end_timeline]

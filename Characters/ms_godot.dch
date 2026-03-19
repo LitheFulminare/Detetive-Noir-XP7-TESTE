@@ -23,9 +23,9 @@
 },
 "mirror": true,
 "offset": Vector2(0, 0),
-"scale": 0.6,
-"scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
+"scale": 1.0,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 }
 },
-&"scale": 1.0
+&"scale": 0.6
 }

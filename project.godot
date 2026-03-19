@@ -23,11 +23,12 @@ item_manager="*uid://b3h3ytrkd0ee5"
 [dialogic]
 
 directories/dch_directory={
-"jinx-jink": "res://Characters/jinx-jink.dch",
+"protagonist": "res://Characters/protagonist.dch",
 "sir_godot": "res://Characters/ms_godot.dch"
 }
 directories/dtl_directory={
-"main_timeline": "res://Timelines/main_timeline.dtl"
+"main_timeline": "res://Timelines/main_timeline.dtl",
+"miku_rescued_timeline": "res://Timelines/miku_rescued_timeline.dtl"
 }
 layout/style_directory={
 "": "res://Assets/Layout_Styles/placeholder_vn_style.tres",
@@ -37,7 +38,9 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://Assets/Layout_Styles/placeholder_vn_style.tres"]
 layout/default_style="res://Assets/Layout_Styles/placeholder_vn_style.tres"
 variables={
-"leeks_obtained": 0
+"main_vars": {
+"got_leeks": false
+}
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
