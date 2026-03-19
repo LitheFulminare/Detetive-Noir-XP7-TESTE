@@ -22,14 +22,8 @@ item_manager="*uid://b3h3ytrkd0ee5"
 
 [dialogic]
 
-directories/dch_directory={
-"protagonist": "res://Characters/protagonist.dch",
-"sir_godot": "res://Characters/ms_godot.dch"
-}
-directories/dtl_directory={
-"main_timeline": "res://Timelines/main_timeline.dtl",
-"miku_rescued_timeline": "res://Timelines/miku_rescued_timeline.dtl"
-}
+directories/dch_directory={}
+directories/dtl_directory={}
 layout/style_directory={
 "": "res://Assets/Layout_Styles/placeholder_vn_style.tres",
 "placeholder_vn_style": "res://Assets/Layout_Styles/placeholder_vn_style.tres"
