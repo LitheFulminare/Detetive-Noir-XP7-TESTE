@@ -15,7 +15,7 @@ func _ready() -> void:
 	# Adquire todos os filhos da cena que são do tipo 'item'
 	for i in get_children():
 		if i is Item:
-			i.item_collected.connect(_on_item_collected) # Conecta o sinal destes itens com a função deste script
+			i.item_collected_signal.connect(_on_item_collected) # Conecta o sinal destes itens com a função deste script
 
 # Roda a cada tick do jogo
 func _process(delta: float) -> void:

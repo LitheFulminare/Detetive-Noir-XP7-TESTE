@@ -3,9 +3,14 @@ class_name Item
 
 # Pra colocar um tipo para o item, default sendo 'leek'
 @export var item_type:= "leek"
+var object_held:= false
 
 # Sinal para comunicar com outros scripts
-signal item_collected(i_type: Item)
+signal item_collected_signal(i_type: Item)
+
+# Roda no início do jogo
+func _ready() -> void:
+	item_collected_signal.connect(_item_collected_func) # Conecta o sinal 'item_collected' com a função 'item_collected'
 
 # Roda a cada tick do jogo
 func _process(delta: float) -> void:
@@ -23,6 +28,11 @@ func _reset_cursor() -> void:
 func object_is_held(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_pressed("interact_with_items"):
 		Input.set_custom_mouse_cursor(item_manager.grabbing_mouse_icon)
-		item_collected.emit(self) # Emite o sinal de item coletado
-		queue_free() # Destrói o item
-		Input.set_custom_mouse_cursor(item_manager.default_mouse_icon) # Reseta o cursor do mouse
+		object_held = true
+	if event.is_action_released("interact_with_items") and object_held:
+		item_collected_signal.emit(self)
+		object_held = false
+
+func _item_collected_func(i: Item) -> void:
+	queue_free() # Destrói o item
+	_reset_cursor()

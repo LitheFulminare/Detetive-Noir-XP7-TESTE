@@ -2,11 +2,11 @@ join protagonist rightmost [animation="Slide From Right" length="0.3" wait="true
 protagonist: What am I doing here?
 protagonist: Who am I?
 protagonist: What is this place? Help!
-join sir_godot leftmost [animation="Slide From Left" length="0.3"]
-sir_godot: Don't worry! Miku is here!
-leave sir_godot [animation="Instant Out" wait="true"]
+join ms_godot leftmost [animation="Slide From Left" length="0.3"]
+ms_godot: Don't worry! Miku is here!
+leave ms_godot [animation="Instant Out" wait="true"]
 protagonist: No! Strange blue-haired girl!
-sir_godot: ...
+protagonist: ...
 protagonist: Maybe I should get- wait, why are there leeks here?
 update protagonist [animation="Heartbeat" length="0.4" repeat_forever="true"]
 [wait_input]

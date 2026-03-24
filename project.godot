@@ -23,8 +23,8 @@ item_manager="*uid://b3h3ytrkd0ee5"
 [dialogic]
 
 directories/dch_directory={
-"protagonist": "res://Characters/protagonist.dch",
-"sir_godot": "res://Characters/ms_godot.dch"
+"ms_godot": "res://Characters/ms_godot.dch",
+"protagonist": "res://Characters/protagonist.dch"
 }
 directories/dtl_directory={
 "main_timeline": "res://Timelines/main_timeline.dtl",
